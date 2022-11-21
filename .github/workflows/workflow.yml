@@ -16,12 +16,7 @@ jobs:
         node-version: [18.x]
     steps:
     - uses: actions/checkout@v2
-    - uses: azure/login@v1
-      with:
-           client-id: 924ad864-a538-48d4-9d8e-f04952f52f0c
-           tenant-id: e562f78c-d375-479f-9e61-6c663bca9b46
-           subscription-id: 1db9c769-08c3-4b8e-9e1c-9aac43aefe4f
-
+    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
