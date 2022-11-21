@@ -33,7 +33,7 @@ jobs:
       run: npm run build
     - name: Start
       run: nohup npm start &
-    - uses: google-github-actions/setup-gcloud@master
+    - uses: google-github-actions/setup-gcloud@main
       with:
         version: '276.0.0'
         service_account_email: "git-deploy@primeval-sweep-238715.iam.gserviceaccount.com"
